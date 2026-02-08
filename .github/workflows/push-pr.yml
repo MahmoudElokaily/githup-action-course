@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+      - "release/**"
+    paths:
+      - "src/**"
+  pull:
+    branches:
+      - main
+      - "release/**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v6.0.2
+
+      - name: run tests
+        run: npm test
