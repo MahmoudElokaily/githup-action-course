@@ -7,6 +7,6 @@ jobs:
     steps:
     - run: |
         deprected=true
-        if [[ deprected ]]: then
+        if [[ deprected ]]; then
         echo "::warning::Deprected function found"
         fi
