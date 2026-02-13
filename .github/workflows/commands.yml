@@ -5,7 +5,7 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+    - run: |
         deprected=true
         if [[ deprected ]]: then
         echo "::warning::Deprected function found"
