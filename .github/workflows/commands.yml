@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          deprected=true
-          if [[ deprected ]]: then
-          echo "::warning::Deprected function found"
-          fi
+        deprected=true
+        if [[ deprected ]]: then
+        echo "::warning::Deprected function found"
+        fi
